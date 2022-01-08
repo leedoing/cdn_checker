@@ -45,7 +45,7 @@ docker run -it -v "host_volume":/cdn_checker/log --net=host cdn_checker "targetU
 e.g)
 [ec2-user@ip-10-0-0-94 cdn_checker]$ docker run -it -v `pwd`/log:/cdn_checker/log --net=host cdn_checker https://media.amazonwebservices.com/urchin.js leedoing@openrun.com
 - URL: https://media.amazonwebservices.com/urchin.js
-- EMAIL: lluckyy@gscdn.com
+- EMAIL: leedoing@openrun.com
 - Installing packages(mutt, curl, traceroute, sendmail)
 - OS: Ubuntu/Docker
 - Installed packages
