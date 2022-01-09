@@ -38,6 +38,7 @@ ubuntu@ip-10-0-0-100:~/cdn_checker$ sudo ./cdn_checker.sh https://media.amazonwe
 If you use other Linux, you can use docker. (Installed docker, sendmail package)
 ```sh
 docker run -it -v `pwd`:/cdn_checker/log --net=host lluckyy/cdn_checker https://media.amazonwebservices.com/urchin.js leedoing@openrun.com
+
 e.g) 
 ubuntu@ip-10-0-0-100:~/cdn_checker$ docker run -it -v `pwd`:/cdn_checker/log --net=host lluckyy/cdn_checker https://media.amazonwebservices.com/urchin.js leedoing@openrun.com
 Unable to find image 'lluckyy/cdn_checker:latest' locally
