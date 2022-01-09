@@ -37,13 +37,19 @@ ubuntu@ip-10-0-0-100:~/cdn_checker$ sudo ./cdn_checker.sh https://media.amazonwe
 ---
 If you use other Linux, you can use docker. (Installed docker, sendmail package)
 ```sh
-git clone https://github.com/leedoing/cdn_checker.git
-cd cdn_checker
-docker build -t cdn_checker ./
-docker run -it -v "host_volume":/cdn_checker/log --net=host cdn_checker "targetUrl" "email"
-
-e.g)
-[ec2-user@ip-10-0-0-94 cdn_checker]$ docker run -it -v `pwd`/log:/cdn_checker/log --net=host cdn_checker https://media.amazonwebservices.com/urchin.js leedoing@openrun.com
+docker run -it -v `pwd`:/cdn_checker/log --net=host lluckyy/cdn_checker https://media.amazonwebservices.com/urchin.js leedoing@openrun.com
+e.g) 
+ubuntu@ip-10-0-0-100:~/cdn_checker$ docker run -it -v `pwd`:/cdn_checker/log --net=host lluckyy/cdn_checker https://media.amazonwebservices.com/urchin.js leedoing@openrun.com
+Unable to find image 'lluckyy/cdn_checker:latest' locally
+latest: Pulling from lluckyy/cdn_checker
+ea362f368469: Already exists
+49ac8e2e7446: Pull complete
+084d9983929c: Pull complete
+05fc1d80bea5: Pull complete
+aaf5c9d13d23: Pull complete
+255146f717cc: Pull complete
+Digest: sha256:e3c8e550fae69889e73eeefe31585e359d1b4c59cfd54dd37cc2c0cf07cbdf27
+Status: Downloaded newer image for lluckyy/cdn_checker:latest
 - URL: https://media.amazonwebservices.com/urchin.js
 - EMAIL: leedoing@openrun.com
 - Installing packages(mutt, curl, traceroute, sendmail)
@@ -55,8 +61,7 @@ e.g)
 - [4. NETWORK TRACEROUTE]
 - [5. Mailing...]
 - Sent mail, Please check inbox with spam
-- log path: /cdn_checker/log/checked_cdn_2022-01-08_07:12:21_ip-10-0-0-94.ap-northeast-2.compute.internal.log
-```
+- log path: /cdn_checker/log/checked_cdn_2022-01-09_02:35:44_ip-10-0-0-100.log
 
 ## Return Results
 
