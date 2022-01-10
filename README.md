@@ -11,7 +11,7 @@ Sometimes you have a failure of CDN like CloudFront, Akamai and so on.
 You need information about cdn and the host environment.
 It will help you to get the information and prove that it's not your fault easily.
 
-## Installation and Result
+## Installation
 The script supports Amazon Linux2 and Ubuntu
 ```sh
 git clone https://github.com/leedoing/cdn_checker.git
@@ -63,6 +63,7 @@ Status: Downloaded newer image for lluckyy/cdn_checker:latest
 - [5. Mailing...]
 - Sent mail, Please check inbox with spam
 - log path: /cdn_checker/log/checked_cdn_2022-01-09_02:35:44_ip-10-0-0-100.log
+```
 
 ## Return Results
 
