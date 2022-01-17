@@ -109,7 +109,7 @@ x-amz-cf-pop: ICN55-C1
 x-amz-cf-id: ruhHsBRa-QLKm_-YXhVtLFqeM61zSHDNQwEcQW9OkSgNAqOJriZuBw==  
 
 ##### [4. NETWORK TRACEROUTE]
-traceroute to img.newsorigin.sbs.co.kr (52.85.231.48), 30 hops max, 60 byte packets  
+traceroute to media.amazonwebservices.com (52.85.231.48), 30 hops max, 60 byte packets  
 1  * * *  
 2  * * *  
 3  * * *  
