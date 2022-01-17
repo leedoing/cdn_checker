@@ -77,7 +77,7 @@ search ap-northeast-2.compute.internal
 nameserver 10.0.0.2
 
 ##### [TARGET URL]
-https://img.nxxxx17054_700.jpg
+https://media.amazonwebservices.com/urchin.js
 
 ##### [CHECKING TIME]
 2021-12-10_03:47:28
